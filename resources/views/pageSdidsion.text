@@ -1,0 +1,12 @@
+@extends('layouts.master') 
+
+@section('title') Dashboard @endsection   
+@section('css') Dashboard @endsection   
+@section('page_name') Home @endsection
+@section('page_name2') DashBoard @endsection
+
+@section('content')
+    this is the content of the page 
+@endsection
+
+@section('scriptts') @endsection
