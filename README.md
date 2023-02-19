@@ -14,7 +14,7 @@ Blood Bank is an application that serves blood donors and cases that need to don
 - **Laravel Sanctum provides authentication system for Restful API**
 - **Spatie/Laravel to Associate Admins with roles and permissions**
 - **Spatie/Saravel-Query-Builder to Filter, Sort and Include Eloquent Relations Based on a Request**
-- **Firebase Email Notification (FCM)**
+- **Firebase cloud Notification (FCM) for Sending Notifications**
 - **DOCKER SAIL**
 - **Rpository Pattern**
 - **SOLID Principles**
