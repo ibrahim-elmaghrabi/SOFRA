@@ -5,7 +5,7 @@
 
 ## About SOFRA
 
- Sofra is an application that serves restaurant owners and customers through quick supply and demand. It provides restaurants with freedom in the way of     rejecting or accepting an order by sending notifications to the restaurant when a new order is created.
+ Sofra is an application that serves restaurant owners and customers through quick supply and demand. It provides restaurants with freedom in the way of     rejecting or accepting an order by sending notifications to the restaurant when a new order is created and also gives the customer the right to refuse or   accept the order. 
 ## Technologies Used
 
 - **Laravel 9**
