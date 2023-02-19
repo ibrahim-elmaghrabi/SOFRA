@@ -9,12 +9,13 @@ Blood Bank is an application that serves blood donors and cases that need to don
 
 ## Technologies Used
 
-- **Laravel**
+- **Laravel 9**
 - **Bootstrap ui for Registeration to admin panel**
 - **Laravel Sanctum provides authentication system for Restful API**
 - **Spatie/Laravel to Associate Admins with roles and permissions**
 - **Spatie/Saravel-Query-Builder to Filter, Sort and Include Eloquent Relations Based on a Request**
 - **Firebase Email Notification (FCM)**
+- **DOCKER SAIL**
 - **Rpository Pattern**
 - **SOLID Principles**
 
