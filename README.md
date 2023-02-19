@@ -5,8 +5,7 @@
 
 ## About SOFRA
 
-Blood Bank is an application that serves blood donors and cases that need to donate blood periodically.The donation is requested through the application with the addition of all the details of the case, and the application sends notifications to all appropriate donors to the case according to their notification settings.The donor can browse donation cases, view their details, and communicate with cases through the attached data.The application contains a section for articles for medical education for all application users.
-
+ Sofra is an application that serves restaurant owners and customers through quick supply and demand. It provides restaurants with freedom in the way of     rejecting or accepting an order by sending notifications to the restaurant when a new order is created.
 ## Technologies Used
 
 - **Laravel 9**
