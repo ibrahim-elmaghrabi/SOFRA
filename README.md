@@ -15,6 +15,9 @@ Blood Bank is an application that serves blood donors and cases that need to don
 - **Spatie/Laravel to Associate Admins with roles and permissions**
 - **Spatie/Saravel-Query-Builder to Filter, Sort and Include Eloquent Relations Based on a Request**
 - **Firebase Email Notification (FCM)**
+- **Rpository Pattern**
+- **SOLID Principles **
+- 
 
 ## Screenshots
 ![Screenshot from 2023-01-13 03-55-59](https://user-images.githubusercontent.com/87943179/212221475-7f032661-eb19-4f49-83e0-f6e9f1ff1414.png)
