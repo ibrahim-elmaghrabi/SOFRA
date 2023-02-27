@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="public/img/logo.png" width="200" height="200" alt="SOFRA Logo">
+    <img src="public/assets/img/logo.png" width="200" height="200" alt="SOFRA Logo">
      <h1 align="center">SOFRA</h1>
 </p>
 
