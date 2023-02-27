@@ -27,7 +27,7 @@ class Restaurant extends Authenticatable
         $this->attributes['password'] = bcrypt($password);
     }
 
-    public function is_active()
+    public function isActive()
     {
         return ($this->attributes['active'] == 0) ? 'closed' : 'opened' ;
     }
@@ -65,7 +65,7 @@ class Restaurant extends Authenticatable
 
     public function account()
     {
-        return $this->hasOne('App\Models\Payment');
+        return $this->hasMany('App\Models\Payment');
     }
 
     public function orders()

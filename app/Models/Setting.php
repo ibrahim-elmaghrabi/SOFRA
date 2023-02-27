@@ -14,11 +14,8 @@ class Setting extends Model
 
     public static function getAppCommission()
     {
-     $settings = Setting::select('commission')->get();
-        foreach($settings as $setting)
-        {
-            return $setting->commission;
-        }
+        $setting = Setting::firstOrNew();
+        return $setting->commission;
     }
 
     

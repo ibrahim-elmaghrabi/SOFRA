@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 
 use Illuminate\Database\Seeder;
+use Database\Seeders\PermissionSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,6 +21,7 @@ class DatabaseSeeder extends Seeder
             PaymentMethodSeeder::class,
             CategorySeeder::class,
             SettingSeeder::class,
+            PermissionSeeder::class
             
         ]);
     }

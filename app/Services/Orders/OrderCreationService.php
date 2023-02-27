@@ -17,7 +17,7 @@ class OrderCreationService
     public function createOrder($request)
     {
         $restaurant = Restaurant::find($request['restaurant_id']);
-        if($restaurant->is_active() == 'closed')
+        if($restaurant->isActive() == 'closed')
         {
             throw new NotAvailableException;
         }
@@ -58,7 +58,7 @@ class OrderCreationService
                         throw new OrderCalculationException ;
                         
                     }else{
-                        event(new OrderCreation($order));
+                       event(new OrderCreation($order));
                         return $order->fresh();
                     }
                 }else {

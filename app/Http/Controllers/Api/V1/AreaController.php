@@ -18,6 +18,6 @@ class AreaController extends Controller
     public function index()
     {
         return httpResponse(1, "Success", AreaResource::collection($this->areas
-            ->allByFilter(['city_id'])));
+            ->filter(['city_id'])));
     }
 }

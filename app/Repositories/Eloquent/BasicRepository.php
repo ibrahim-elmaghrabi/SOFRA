@@ -10,10 +10,20 @@ use App\Repositories\Exceptions\NoEntityDefined;
 abstract class BasicRepository implements BasicRepositoryContract
 {
     protected $entity ;
-
+    
     public function __construct()
     {
         $this->entity = $this->resolveEntity();
+    }
+
+    protected function resolveEntity()
+    {
+        if(!method_exists($this, 'entity'))
+        {
+            throw new NoEntityDefined("Entity Model Not Found");
+            
+        }
+        return app()->make($this->entity());
     }
 
     public function all()
@@ -21,7 +31,7 @@ abstract class BasicRepository implements BasicRepositoryContract
         return $this->entity->all() ;
     }
 
-    public function allByFilter(array $keys, array $relation = [])
+    public function filter(array $keys, array $relation = [])
     {
         return QueryBuilder::for($this->entity->with($relation))
         ->allowedFilters($keys)
@@ -43,6 +53,16 @@ abstract class BasicRepository implements BasicRepositoryContract
         return $this->entity->where($column,$value)->first();
     }
 
+    public function pluck($column1, $column2)
+    {
+        return $this->entity->pluck($column1, $column2);
+    }
+
+    public function paginate(int $num)
+    {
+        return $this->entity->paginate($num);
+    }
+
     public function create(array $attributes)
     {
         return $this->entity->create($attributes);
@@ -58,13 +78,4 @@ abstract class BasicRepository implements BasicRepositoryContract
         return $this->find($id)->delete();
     }
 
-    protected function resolveEntity()
-    {
-        if(!method_exists($this, 'entity'))
-        {
-            throw new NoEntityDefined("Entity Model Not Found");
-            
-        }
-        return app()->make($this->entity());
-    }
 }

@@ -2,6 +2,8 @@
 
 namespace App\Http\Requests;
 
+use App\Http\Requests\ApiRequest;
+
 class CommentRequest extends ApiRequest
 {
     /**

@@ -13,7 +13,6 @@ class CreatePaymentsTable extends Migration {
 			$table->integer('restaurant_id')->unsigned();
 			$table->decimal('paid');
 			$table->text('note');
-			$table->date('date');
 		});
 	}
 
